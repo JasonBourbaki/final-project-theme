@@ -1,4 +1,4 @@
-# he-fp-theme
+# Dartboard
 
 A lightweight Jekyll theme created for Fisher College Spring 2021 Frontend Web Design course, with a personal financial blog in mind.
 
