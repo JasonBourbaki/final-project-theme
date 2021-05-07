@@ -1,0 +1,51 @@
+<ul class="social-media-list">
+    {% if site.social.twitter %}
+    <li>
+      <a rel="me" href="https://twitter.com/{{ site.social.twitter }}" rel="noreferrer noopener" target="_blank" title="Twitter">
+        <span class="icon icon-twitter"></span>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.social.facebook %}
+    <li>
+      <a rel="me" href="https://facebook.com/{{ site.social.facebook }}" rel="noreferrer noopener" target="_blank" title="Facebook">
+        <span class="icon icon-facebook"></span>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.social.instagram %}
+    <li>
+      <a rel="me" href="https://instagram.com/{{ site.social.instagram }}" rel="noreferrer noopener" target="_blank" title="Instagram">
+        <span class="icon icon-instagram"></span>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.social.github %}
+    <li>
+      <a rel="me" href="https://github.com/{{ site.social.github }}" rel="noreferrer noopener" target="_blank" title="GitHub">
+        <span class="icon icon-github"></span>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.social.linkedin %}
+    <li>
+      <a rel="me" href="https://www.linkedin.com/in/{{ site.social.linkedin }}" rel="noreferrer noopener" target="_blank" title="LinkedIn">
+        <span class="icon icon-linkedin"></span>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.social.reddit %}
+    <li>
+      <a rel="me" href="https://www.reddit.com/u/{{ site.social.reddit }}" rel="noreferrer noopener" target="_blank" title="Reddit">
+        <span class="icon icon-reddit"></span>
+      </a>
+    </li>
+    {% endif %}
+    {% if site.social.email %}
+    <li>
+      <a rel="me" href="mailto:{{ site.social.email }}" title="Email">
+        <span class="icon icon-email"></span>
+      </a>
+    </li>
+    {% endif %}
+</ul>

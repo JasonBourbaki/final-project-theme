@@ -1,0 +1,301 @@
+/**
+ * Site header
+ */
+.site-header {
+  border-top: 1.5px solid $border-color-03;
+  border-bottom: 2px solid $border-color-01;
+  min-height: $spacing-unit * 1.865;
+  line-height: $base-font-size * 2.25;
+  position: relative;
+}
+
+.site-title {
+  @include relative-font-size(2);
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  padding: $base-font-size*1.1875 0 0 $spacing-unit/3;
+  position: absolute;
+  @include media-query($on-palm) {
+    padding-right: 45px;
+  }
+
+  &,
+  &:visited {
+    color: $site-title-color;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.social-links{
+  float:right;
+}
+
+.social-media-list {
+  list-style: none;
+  display: table;
+  margin: 0 auto;
+  padding: $base-font-size*1.125 - $spacing-unit/4 0;
+  li {
+    float: left;
+    margin: 0 3px 0 0;
+    &:last-of-type { margin-right: 0 }
+    a {
+      display: block;
+      padding: $spacing-unit / 4;
+    }
+  }
+}
+
+.menu{
+  float:left;
+  position: relative;
+  display: inline-block;
+  padding: $base-font-size*2.25-16.5px 0 0 0;
+}
+
+.menubtn{
+  background-color: $background-color;
+  color: $text-color;
+  padding: 0px;
+  border: none;
+  .icon-menu{
+    font-size: 33px;
+  }
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: $button-background-color;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu-content a {
+  color: $text-color;
+  font-size: 20px;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.menu-content a:hover {background-color: $button-hover-color;}
+
+/* Show the dropdown menu on hover */
+.menu:hover .menu-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.menu:hover .menubtn {background-color: $button-activated-color;}
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid $border-color-01;
+  padding: $spacing-unit 0;
+}
+
+.contact-list-left{
+  list-style: none;
+  margin-left: 0;
+}
+
+.contact-list-right{
+  list-style: none;
+  margin-right: 10;
+}
+
+.logo{
+  margin: auto;
+  width: auto;
+  height: 60px;
+}
+
+.footer-col-wrapper{
+  @include relative-font-size(0.9375);
+  color: $brand-color;
+}
+
+.footer-col {
+  margin-bottom: $spacing-unit / 2;
+}
+
+.footer-col-1{
+  text-align: left;
+  width: 33%;
+}
+.footer-col-2 {
+  text-align: center;
+  width: 34%;
+}
+
+.footer-col-3 {
+  text-align: right;
+  width: 33%;
+}
+
+@media screen and (min-width: $on-large) {
+  .footer-col-1 {
+    width: 33%;
+  }
+  .footer-col-2 {
+    width: 34%;
+  }
+  .footer-col-3 {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: $on-medium) {
+  .footer-col-wrapper {
+    display: flex
+  }
+
+  .footer-col {
+    width: calc(100% - (#{$spacing-unit} / 2));
+    padding: 0 ($spacing-unit / 2);
+
+    &:first-child {
+      padding-right: $spacing-unit / 2;
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      padding-left: $spacing-unit / 2;
+    }
+  }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+  flex: 1 0 auto;
+}
+
+.page-heading {
+  @include relative-font-size(2);
+}
+
+.post-list-heading {
+  @include relative-font-size(1.75);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $brand-color;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title,
+.post-content h1 {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1.15;
+
+  @media screen and (min-width: $on-large) {
+    @include relative-font-size(2.625);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h1, h2, h3 { margin-top: $spacing-unit * 2 }
+  h4, h5, h6 { margin-top: $spacing-unit }
+
+  h2 {
+    @include relative-font-size(1.75);
+
+    @media screen and (min-width: $on-large) {
+      @include relative-font-size(2);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.375);
+
+    @media screen and (min-width: $on-large) {
+      @include relative-font-size(1.625);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+  }
+
+  h5 {
+    @include relative-font-size(1.125);
+  }
+  h6 {
+    @include relative-font-size(1.0625);
+  }
+}
+
+
+/**
+ * Pagination navbar
+ */
+.pagination {
+  margin-bottom: $spacing-unit;
+  @extend .social-media-list;
+  li {
+    a, div {
+      min-width: 41px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    div {
+      display: block;
+      padding: $spacing-unit / 4;
+      border: 1px solid transparent;
+
+      &.pager-edge {
+        color: $border-color-01;
+        border: 1px dashed;
+      }
+    }
+  }
+}
+
+
+
+/**
+ * Grid helpers
+ */
+@media screen and (min-width: $on-large) {
+  .one-half {
+    width: calc(50% - (#{$spacing-unit} / 2));
+  }
+}

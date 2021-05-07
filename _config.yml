@@ -1,0 +1,29 @@
+title: Dartboard
+author: Insert Your Name Here
+description: A Jekyll theme designed for CS234 Web Design final project
+theme: final-project-theme
+
+ga: false #Enable/disable Google Analytics
+google_analytics: #Your Google Analytics identifier, format UA-XXXXXXXX-X
+
+social:
+    email: jhe01@fisher.edu #Email address
+    twitter: #Twitter handle
+    facebook: #Facebook handle
+    instagram: jasonhe233 #Instagram user name
+    github: JasonBourbaki #Github user name
+    linkedin: jiaxin-h-025498123 #Linkdein profile ID
+    reddit: #Reddit user ID
+
+permalink: :slug
+
+header_pages:
+- all_posts.md
+
+#Build settings:
+theme: final-project-theme
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate

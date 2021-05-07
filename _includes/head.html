@@ -1,0 +1,22 @@
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ site.title }} | {{ page.title }}</title>
+    {% if page.description %}
+        <meta name="description" content='{{ page.description }}'>
+    {% else %}
+        <meta name="description" content='{{ site.description }}'>
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Page icon -->
+    <link rel="default-icon" href="default-icon.png">
+    
+    <!-- Import stylesheets -->
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css">
+    
+    {% if site.ga %}
+        {% include google-analytics.html %}
+    {% endif %}
+</head>

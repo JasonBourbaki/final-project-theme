@@ -1,0 +1,55 @@
+// Settings
+@charset "UTF-8";
+
+@font-face {
+  font-family: ionicons;
+  src: "https://unpkg.com/ionicons@5.4.0/dist/ionicons.js";
+}
+
+// Icon style
+.icon {
+  display: inline-block;
+  width: 1em;
+  color: $button-base-color;
+  font-size: $base-icon-size;
+  font-family: ionicons;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+// Icon IDs
+$ionicons-prefix: icon- !default;
+$ionicon-at: "\f322";
+$ionicon-menu: "\f32a";
+$ionicon-social-facebook: "\f236";
+$ionicon-social-github: "\f239";
+$ionicon-social-linkedin: "\f240";
+$ionicon-social-twitter: "\f2b0";
+$ionicon-social-instagram: "\f23e";
+$ionicon-social-reddit: "\f247";
+
+.#{$ionicons-prefix}menu:before {
+  content: $ionicon-menu;
+}
+.#{$ionicons-prefix}email:before {
+  content: $ionicon-at;
+}
+.#{$ionicons-prefix}facebook:before {
+  content: $ionicon-social-facebook;
+}
+.#{$ionicons-prefix}github:before {
+  content: $ionicon-social-github;
+}
+.#{$ionicons-prefix}linkedin:before {
+  content: $ionicon-social-linkedin;
+}
+.#{$ionicons-prefix}twitter:before {
+  content: $ionicon-social-twitter;
+}
+.#{$ionicons-prefix}instagram:before {
+  content: $ionicon-social-instagram;
+}
+.#{$ionicons-prefix}reddit:before {
+  content: $ionicon-social-reddit;
+}
